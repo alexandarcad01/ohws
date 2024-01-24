@@ -78,7 +78,9 @@ input[type=text], input[type=password]
    } 
  
   .mySlides{
-    width:100%;
+    width: 750px;
+    height: 400px;
+    row-gap: 0;
 }  
   
 
