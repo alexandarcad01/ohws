@@ -9,25 +9,23 @@
 	place-items: center;
 	background-color:white;
    }
-  .searchb{
-    text-align: start;
-
-  }
-
+  .homeheading input[type="text"]{
+    position:relative;  
+    left:500px;
+    /*top:25%;*/
+    width:250px;
+    background-color:#ff8000; 
+    color:grey;
+    }
 H1{
 	color:#ff8000;
 	font-size: 30px;
 }  
-
-/*.homeheadingdecrp{
-  text-align: center;
-}*/
-
- input[type=text] { 
+/*input[type=text] { 
       width: 30 px; 
       -webkit-transition: width 0.15s ease-in-out; 
       transition: width 0.15s ease-in-out; 
-   } 
+   }*/ 
  /*input[type=text]:focus { 
      width: 300px; 
    }*/ 
