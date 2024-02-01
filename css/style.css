@@ -106,10 +106,6 @@ input[type=text], input[type=password]
       height: 100%;
     }
   
-  
-  
-  
-  
     .imagecontainer{
     width: 100%;
     }
@@ -128,12 +124,22 @@ input[type=text], input[type=password]
   
   
     }
+
   
     .swiper-pagination-bullet-active{
-    color: #fff;
-    }
+     Opacity:1;
+     Background-color: green;
+     Width:3rem;
+     Height:0.6rem;
+     Border-redious:0.5rem;
+     }
   
-
-
+.swiper .swiper-button-prev, 
+.swiper .swiper-button-next{
+color: rgb(255, 0, 21);
+}
+.swiper .swiper-pagination{
+  color: rgb(132, 0, 255);
+}
 
 

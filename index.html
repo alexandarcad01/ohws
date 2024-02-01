@@ -49,15 +49,19 @@
 	
 	
 		</div>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	
 	<script>
 		const swiper = new Swiper('.swiper', {
 	  // Optional parameters
 	  direction: 'horizontal',
-	  loop: true,
-	
-	  // If we need pagination
+	  loop: true, 
+	  autoplay:{delay:1000,
+	  pauseOnMouseEnter:true},
+	  //slides PerView:2,
+	  //spaceBetween:10,
+     // If we need pagination
 	  pagination: {
 		el: '.swiper-pagination',
 		clickable:true,
