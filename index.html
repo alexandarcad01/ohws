@@ -4,6 +4,7 @@
 <title>THE HARDWARE</title>
 	    <link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/x-icon" href="https://i.postimg.cc/2jB9sHJt/logo.jpg">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 	 <body>
 		<div class="homeheading">
@@ -22,12 +23,59 @@
 			<li><a href="#">PRE-BUILT PC</a></li>
 			<li><a href="login.html">LOGIN</a></li>
         </ul>
-		<marquee>
-			<img class="mySlides" src="https://i.postimg.cc/fy1DQxVB/advistment.jpg"/>
-			<img class="mySlides" src="https://i.postimg.cc/3xX6w0z1/GCC-WIFI-Chipset-Industry-opportunities-demand-and-forecasts-2019-2027.jpg"/>
-			<img class="mySlides" src="https://i.postimg.cc/RZ5Jctg7/koybord.jpg"/>
-			<img class="mySlides" src="https://i.postimg.cc/BnbgrL4t/download.jpg"/>
-	    </marquee>
+		
+		<div class="imagecontainer">
+
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				  <!-- Slides -->
+				  <div class="swiper-slide"><img src="images/advistment.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="images/keyboard.jpg.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="images/download.jpg" alt=""></div>
+				  <div class="swiper-slide"><img src="images/MAN POR.jpg" alt=""></div>
+				  ...
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+	
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+	
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			  </div>
+	
+	
+		</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	
+	<script>
+		const swiper = new Swiper('.swiper', {
+	  // Optional parameters
+	  direction: 'horizontal',
+	  loop: true,
+	
+	  // If we need pagination
+	  pagination: {
+		el: '.swiper-pagination',
+		clickable:true,
+	  },
+	
+	  // Navigation arrows
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+	
+	  // And if we need scrollbar
+	  scrollbar: {
+		el: '.swiper-scrollbar',
+	  },
+	});
+	</script>
+	
 
 </body>
 </html>
