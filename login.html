@@ -9,8 +9,7 @@
 		<div class="homeheading">
 		<img class="logo" src ="https://i.postimg.cc/gcvM77VJ/thehardware.jpg"/>
 		<H1>THE HARDWARE</H1><br><br>
-		<input id="searchbar" onkeyup="search()" type="text"
-        name="search" placeholder="Search ..">
+    </div>
 	</div>
 		<ul><li><a href="#">ALL DEPARTMENTS</a></li>
 			<li><a href="index.html">HOME</a></li>
@@ -34,7 +33,7 @@ input[type=text], input[type=password]
   border: 1px solid #red;
   box-sizing: border-box;
 }
-button {
+button{
   background-color: orangered;
   color: white;
   padding: 14px 20px;
@@ -73,6 +72,7 @@ span.psw {
   padding-top: 60px;
 }
 .modal-content {
+  justify-content: center;
   background-color: #fefefe;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
@@ -109,12 +109,12 @@ span.psw {
 </head>
 <body>
 
-  <legend><B> LOGIN PAGE </B></legend><form class="modal-content animate" method="post">
+  <center><legend><H2><B> LOGIN PAGE </B></H2></legend><form class="modal-content animate" method="post">
     <div class="container">
-      <label for="uname"><b>USERNAME</b></label>
+      <label for="uname"><b>USERNAME:</b></label>
       <input type="text" placeholder="ENTER USERNAME" name="uname" required><br>
 
-      <label for="psw"><b>PASSWORD</b></label>
+      <label for="psw"><b>PASSWORD:</b></label>
       <input type="password" placeholder="ENTER PASSWORD" name="psw" required><br>
         
       <button type="submit">LOGIN</button>
@@ -128,7 +128,7 @@ span.psw {
       <span class="nur">NEW <a href="registrationform.html">USER REGISTRATION</a></span>
       <span class="psw">FORGOT <a href="#">PASSWORD?</a></span>
     </div>
-  </form>
+  </form></center>
 </div>
 </body>
 </html>

@@ -10,17 +10,42 @@
 	background-color:white;
    }
   .homeheading input[type="text"]{
-    position:relative;  
-    left:500px;
-    /*top:25%;*/
-    width:250px;
+    position:relative;
+    float: inline-end;
     background-color:#fff; 
     color:grey;
     }
 H1{
 	color:#ff8000;
 	font-size: 30px;
-}  
+} 
+
+body {
+  background-color: #8ebf42;
+}
+
+form {
+  position: relative;
+  width: 400px;
+  margin: auto;
+  left: 200px;
+}
+
+input {
+  padding: 4px 10px;
+  border: 0;
+  font-size: 16px;
+}
+
+.search {
+  width: 75%;
+}
+
+.submit {
+  width: 70px;
+  background-color: #1c87c9;
+  color: #ffffff;
+}
 
 .modal-content {
   background-color: #fefefe;
@@ -70,10 +95,13 @@ input[type=text], input[type=password]
    box-sizing: border-box;
    }
 
-   fieldset
+   .border-box
   {
-   width: 100%;
-   border-radius: 20PX;
+   width: 600px;
+   height: 650px;
+   padding: 10px;
+   border: 2px solid gray;
+   margin: 20px;
    border-color: black;
    COLOR: black;
    } 
