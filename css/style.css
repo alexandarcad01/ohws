@@ -1,3 +1,23 @@
+.user{
+	width:110px;
+	height: 110px;
+}
+.username p{
+  padding: 15px;
+}
+.username{
+	gap:30px;
+  float: right;
+  text-align: right;
+	place-items: center;
+	background-color:white;
+   }
+
+  .username input[type="text"]{
+   background-color:#fff; 
+    color:grey;
+    }
+
 .logo{
 	width:110px;
 	height:110px;
@@ -20,15 +40,11 @@ H1{
 	font-size: 30px;
 } 
 
-body {
-  background-color: #8ebf42;
-}
-
-form {
+.searchform {
   position: relative;
   width: 400px;
   margin: auto;
-  left: 200px;
+  left: 150px;
 }
 
 input {
@@ -38,11 +54,11 @@ input {
 }
 
 .search {
-  width: 75%;
+  width: 100%;
 }
 
 .submit {
-  width: 70px;
+  width: 90px;
   background-color: #1c87c9;
   color: #ffffff;
 }
@@ -94,21 +110,7 @@ input[type=text], input[type=password]
    border: 1px solid #ccc;
    box-sizing: border-box;
    }
-
-   .border-box
-  {
-   width: 600px;
-   height: 650px;
-   padding: 10px;
-   border: 2px solid gray;
-   margin: 20px;
-   border-color: black;
-   COLOR: black;
-   } 
- 
-  
-  
-  /* slide show codes */
+/* slide show codes */
   
   body {
       margin: 5;
@@ -150,14 +152,11 @@ input[type=text], input[type=password]
     width: 100%;
     height: 600px;
   }
-    .swiper .swiper-button-prev,  .swiper .swiper-button-next{
+    .swiper .swiper-button-prev, .swiper .swiper-button-next{
     color: #fff;
-  
-  
-    }
+  }
 
-  
-    .swiper-pagination-bullet-active{
+  .swiper-pagination-bullet-active{
      Opacity:1;
      Background-color: green;
      Width:3rem;
@@ -171,6 +170,44 @@ color: rgb(255, 0, 21);
 }
 .swiper .swiper-scrollbar{
   color: rgb(132, 0, 255);
+}
+
+/*registration form*/
+.border-box
+  {
+   width: 600px;
+   height: 610px;
+   padding: 10px;
+   border: 2px solid gray;
+   border-color: black;
+   COLOR: black;
+   } 
+   
+   button { 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    background-color: #4CAF50; 
+    font-size: 16px; 
+} 
+  
+.wrap { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and {
+  max-width: 500px;
+  li a{
+    font-size: 10px;
+  }
+
 }
 
 

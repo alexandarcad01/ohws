@@ -11,27 +11,26 @@
         </div>
 		</div>
 
-		<ul><li><a href="#">ALL DEPARTMENTS</a></li>
+		<ul><li><a href="AllDepartment.html">ALL DEPARTMENTS</a></li>
 			<li><a href="index.html">HOME</a></li>
-			<li><a href="#">BRAND STORE</a></li>
-			<li><a href="#">LAPTOPS</a></li>
-			<li><a href="#">PRE-BUILT PC</a></li>
-			<li><a href="login.html">LOGIN</a></li>
-            <li><a href="#">About Us</a></li>
+			<li><a href="BrandStore.html">BRAND STORE</a></li>
+			<li><a href="PreBuildYourDevice.html">PRE-BUILT YOUR DEVICE</a></li>
+            <li><a href="Aboutus.html">ABOUT US</a></li>
+            <li><a href="Contactus.html">CONTACT US</a></li>
         </ul>
 </head>
         <body>
            <center>
-                <legend><B>USER LOGIN</B></legend>
+                <legend><B>USER LOGIN</B></legend><br><br>
                 <div class="border-box"><form>
                    <label for="firstname"><b>FIRST_NAME:</b></label>
                     <input type="text" placeholder="FIRST_NAME"><br>
                     
                     <label for="lastname"><b>LAST_NAME:</b></label>
-                    <input type="text" placeholder="LAST_NAME"><br>
+                    <input type="text" placeholder="LAST_NAME"><br><br>
 
                     <label for="dob"><b>DATE OF BIRTH:</b></label>
-                    <input type="text" placeholder="DD"><br>
+                    <input type="date" placeholder="DD/MM/YYYY"><br><br>
                     
                     <label for="username"><b>USER_NAME:</b></label>
                     <input type="text" placeholder="USER_NAME"><br>
@@ -40,7 +39,7 @@
                      <input type="text" placeholder="PASSWORD"><br>
                 
                      <label for="confirmpassword"><b>CONFORM_PASSWORD:</b></label>
-                     <input type="text" placeholder="CONFORM_PASSWORD"><br>
+                     <input type="text" placeholder="CONFORM_PASSWORD"><br><br>
                 
                      <label for="email"><b>EMAIL ADDRESS:</b></label>
                      <input type="email" placeholder="fill your email address"><br><br>
@@ -53,13 +52,14 @@
                         <option>--ACCOUNT_TYPE--</option>
                         <option>PREMIUM</option>
                         <option>FREE</option>
-                        </select><br>
+                        </select><br><br>
                         
                     <input type="checkbox">
-                    <label>I accept the terms and condition</label><br><br>
-                        
-                    <input type="submit" value="Register"><br><br><input type="Reset" value="Clear">
-                    </form></div>
+                    <label>I ACCEPT THE TERMS AND CONDITION</label><br><br>
+
+                    <div class="wrap"> <button type="submit" onclick="solve()"> REGISTER </button> <br><br>   
+                     <button type="reset" onclick="solve()"> CANCEL  </button> </div> 
+                    </form></div> 
                 
             </center>
     </body>
