@@ -1,6 +1,8 @@
 .user{
 	width:110px;
 	height: 110px;
+  border-radius: 50px;
+  margin-inline: 30px;
 }
 .username p{
   padding: 15px;
@@ -8,6 +10,7 @@
 .username{
 	gap:30px;
   float: right;
+  
   text-align: right;
 	place-items: center;
 	background-color:white;
@@ -182,6 +185,10 @@ color: rgb(255, 0, 21);
    border-color: black;
    COLOR: black;
    } 
+  
+ .ref {
+    width: 100%;
+   }
    
    button { 
     padding: 15px; 
