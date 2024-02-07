@@ -5,7 +5,7 @@
 <style>
 body {
 font-family: Arial, sans-serif;
-background-color: #f0bd9d;
+background-color: #38b3d8;
 padding: 20px;
 }
 form {
@@ -50,9 +50,22 @@ border-radius: 4px;
 cursor: pointer;
 font-size: 16px;
 }
+button { 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    background-color: #4CAF50; 
+    font-size: 16px; 
+} 
+  
 </style>
 </head>
 <body>
+    <center><h1>WELCOME USER</h1></center>go
 <img src="images/registration.png" alt="Hotel Image" style="display: block; margin: 0 auto 20px; width: 500px;">
 <form>
 <div class="form-row">
@@ -71,10 +84,10 @@ font-size: 16px;
 <label for="email">EMAIL ID:</label>
 <input type="email" id="email" name="email">
 </div>
-<div class="form-row">
-<label for="gender">GENDER:</label>
-<input type="radio" id="gender" name="gender">
-</div>
+<p><B>GENDER:</B></p>
+<center><input type="radio" name="gender" value="male"><B>MALE</B>
+<input type="radio" name="gender" value="female"><B>FEMALE</B><br><br>
+</center>
 <div class="form-row">
 <label for="phone">PHONE NO:</label>
 <input type="tel" id="phone" name="phone">
@@ -96,8 +109,8 @@ font-size: 16px;
 </select>
 </div>
 <input type="checkbox"><label>I ACCEPT THE TERMS AND CONDITION</label>
-<input type="submit" value="SUBMIT">
-<input type="reset" value="CANCEL">
+<div class="wrap"> <button type="submit" onclick="solve()"> REGISTER </button>  
+    <button type="reset" onclick="solve()"><a href="index.html">CANCEL</a></button> </div> 
 </form>
 </body>
 </html>
