@@ -40,7 +40,12 @@ font-size: 14px;
 input[type="checkbox"] {
     float: left;
 }
-
+.background-img {  
+    min-height: 100%;  
+    width: 100%;
+    background-size: cover;  
+    background-image: url("https://i.postimg.cc/PxnZhDZt/registerbackimg.jpg");  
+}  
 input[type="submit"] input[type="reset"] {
 padding: 10px 20px;
 background: linear-gradient(to bottom right, #db4340, #ff6f00);
@@ -65,8 +70,10 @@ button {
 </style>
 </head>
 <body>
-    <center><h1>WELCOME USER</h1></center>go
-<img src="images/registration.png" alt="Hotel Image" style="display: block; margin: 0 auto 20px; width: 500px;">
+    <center><h1>WELCOME USER</h1></center>
+
+    <div class="background-img">  
+    
 <form>
 <div class="form-row">
 <label for="fname">FIRST NAME:</label>
@@ -77,20 +84,8 @@ button {
 <input type="text" id="lname" name="lname">
 </div>
 <div class="form-row">
-<label for="dob">DATE OF BIRTH:</label>
-<input type="date" id="dob" name="dob">
-</div>
-<div class="form-row">
-<label for="email">EMAIL ID:</label>
-<input type="email" id="email" name="email">
-</div>
-<p><B>GENDER:</B></p>
-<center><input type="radio" name="gender" value="male"><B>MALE</B>
-<input type="radio" name="gender" value="female"><B>FEMALE</B><br><br>
-</center>
-<div class="form-row">
-<label for="phone">PHONE NO:</label>
-<input type="tel" id="phone" name="phone">
+<label for="uname">USER_NAME</label>
+<input type="text" id="uname" name="uname">
 </div>
 <div class="form-row">
 <label for="password">PASSWORD:</label>
@@ -100,6 +95,15 @@ button {
 <label for="cpassword">CONFIRM PASSWORD:</label>
 <input type="text" id="cpassword" name="cpassword">
 </div>
+<div class="form-row">
+<label for="email">EMAIL ID:</label>
+<input type="email" id="email" name="email">
+</div>
+<div class="form-row">
+<label for="phone">PHONE NO:</label>
+<input type="tel" id="phone" name="phone">
+</div>
+
 <div class="form-row">
 <label for="acctype">ACCOUNT TYPE:</label>
 <select id="acctype" name="acctype">
@@ -112,6 +116,9 @@ button {
 <div class="wrap"> <button type="submit" onclick="solve()"> REGISTER </button>  
     <button type="reset" onclick="solve()"><a href="index.html">CANCEL</a></button> </div> 
 </form>
+<Script>
+
+</Script>
 </body>
 </html>
 
