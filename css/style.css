@@ -17,7 +17,7 @@
    }
 
    .username input[type="text"]{
-   background-color:#fff; 
+   background-color:#ffffff; 
     color:grey;
     }
 
@@ -100,7 +100,7 @@ input {
 	color:black ;
 	padding: 10px 10px;
 }
-.barli .ali :hover{
+.barli .ali:hover{
   background-color: orchid;
 }
 /*.dropbtn {
@@ -229,6 +229,10 @@ color: rgb(255, 0, 21);
   float: right;
   height: 100px;
 }
+H2{
+	color:#ff8000;
+	font-size: 20px;
+} 
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -242,9 +246,7 @@ color: rgb(255, 0, 21);
 *{
     box-sizing: border-box;
 }
-html{
-    height: 100%;
-}   
+
 .section1{
   font-family: Arial, sans-serif;
     height: 100%;
@@ -446,29 +448,33 @@ footer{
 }
 h3{
   font-size: 28px;
-  margin-bottom: 5px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .footer-content p{
+  position: relative;
+  right: 270px;
+  top: 20px;
   width:190px;
- margin: auto;
+  margin: auto;
   padding: 7px;
 }
-.footer-content ul{
-  gap: 10px;
+.footer-content .social-icons{
+  gap: 20px;
   text-align: center;
 }
-.list{
+.jaya{
   padding: 0;
 }
-.list li{
+.jaya{
   width: auto;
   text-align: center;
   list-style-type:none;
   padding: 7px;
   position: relative;
+  gap: 10px;
 }
-.list li::before{
+.jaya::before{
   content: '';
   position: absolute;
   transform: translate(-50%,-50%);
@@ -479,15 +485,18 @@ h3{
   background: #f18930;
   transition-duration: .5s;
 }
-.list li:hover::before{
+.jaya:hover::before{
   width: 70px;
 }
 .social-icons{
+  position: relative;
+  left: 100px;
+  top: 100px;
+  display: flex;
   text-align: center;
   padding: 0;
 }
-.social-icons li{
-  display: flex;
+.social-icons .jaya{
   text-align: right;
   padding: 5px;
 }
