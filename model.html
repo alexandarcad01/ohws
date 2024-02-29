@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hotel Registration Form</title>
+<title>Registration Form</title>
 <style>
 body {
 font-family: Arial, sans-serif;
@@ -99,13 +99,15 @@ button {
 <form>
 <div class="form-row">
 <label for="fname">FIRST NAME:</label>
-<input type="text" id="fname" name="fname">
+<input type="text" name="fname" size="15" value="" id="tbfname">
 </div>
 <div class="form-row">
 <label for="lname">LAST NAME:</label>
-<input type="text" id="lname" name="lname">
+<input type="text"  name="lname" size="15" value="" id="tblname">
 </div>
 <div class="gender-options">
+  <input type="text"  name="gender" size="15" value="" id="tbgender">
+  <label for="gender">GENTER:</label>
 <input type="radio" id="male" name="gender" value="male">
 <label for="male">Male</label>
 <input type="radio" id="female" name="gender" value="female">
@@ -118,38 +120,84 @@ button {
 <input type="text" id="dob-year" name="dob-year" placeholder="Year" maxlength="4" size="4" />
 </div><br><br>
 <div class="form-row">
-<label for="uname">USER_NAME</label>
-<input type="text" id="uname" name="uname">
+<label for="uname">USER_NAME:</label>
+<input type="text"  name="uname" size="15" value="" id="tbuname">
 </div>
 <div class="form-row">
 <label for="password">PASSWORD:</label>
-<input type="text" id="password" name="password">
+<input type="text"  name="password" size="15" value="" id="tbpassword">
 </div>
 <div class="form-row">
 <label for="cpassword">CONFIRM PASSWORD:</label>
-<input type="text" id="cpassword" name="cpassword">
+<input type="text"  name="cpassword" size="15" value="" id="tbpassword">
 </div>
 <div class="form-row">
 <label for="email">EMAIL ID:</label>
-<input type="email" id="email" name="email">
+<input type="email"  name="email" size="15" value="" id="tbpassword">
 </div>
 <div class="form-row">
 <label for="phone">PHONE NO:</label>
-<input type="tel" id="phone" name="phone">
+<input type="tel"  name="phone" size="15" value="" id="tbphone">
 </div>
 
 <div class="form-row">
+  <input type="text"  name="acctype" size="15" value="" id="tbacctype">
 <label for="acctype">ACCOUNT TYPE:</label>
-<select id="acctype" name="acctype">
+<select id="acctype" name="acctype" name="accounttype" value="" id="tbaccounttype">
 <option value="">SELECT ACCOUNT TYPE</option>
 <option value="free">FREE</option>
 <option value="premium">PREMIUM</option>
 </select>
 </div>
 <input type="checkbox"><label>I ACCEPT THE TERMS AND CONDITION</label>
-<div class="wrap"> <button type="submit" onclick="solve()"> REGISTER </button>  
-    <button type="reset" onclick="solve()"><a href="index.html">CANCEL</a></button> </div> 
+<div class="wrap"> <button type="submit" onclick="RegisterForm()"> REGISTER </button>  
+    <button type="reset" onclick="solve()"><a href="index.html">CANCEL</a></button>
+     </div> 
 </form>
+<table border="1px">
+  <tr>
+      <td> FIRST_NAME:</td>
+      <td id="fname"></td>
+  </tr>
+  <tr>
+      <td>LAST_NAME:</td>
+      <td id="lname"></td>
+  </tr>
+  <tr>
+    <td>GENDER:</td>
+    <td id="gender"></td>
+</tr>
+<tr>
+  <td>Date of birth:</td>
+  <td id="dob"></td>
+</tr>
+  <tr>
+      <td>USER_NAME:</td>
+      <td id="uname"></td>
+  </tr>
+  <tr>
+      <td>PASSWORD:</td>
+      <td id="password"></td>
+  </tr>
+  <tr>
+      <td>CONFORM_PASSWORD:</td>
+      <td id="cpassword"></td>
+  </tr>
+  <tr>
+      <td>EMAIL:</td>
+      <td id="email"></td>
+  </tr>
+  <tr>
+      <td>PHONE NUMBER:</td>
+      <td id="phone"></td>
+  </tr>
+  <tr>
+      <td>ACCOUNT_TYPE:</td>
+      <td id="acctype"></td>
+  </tr>
+</table> 
+<script src="ohws/model.js">
+</script>
 <Script>
 
 </Script>
